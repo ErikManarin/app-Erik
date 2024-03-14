@@ -11,7 +11,7 @@ export default function AppNavigator() {
   return (
     <Stack.Navigator>
       <Stack.Screen
-        name="TabNavigator" // funciona como uma ID da tela, vamos usa-la para chamar esta tela depois
+        name="TabNavigator" 
         component={TabNavigator}
         options={{ headerShown: false }}
       />
@@ -23,8 +23,8 @@ function TabNavigator() {
   return (
     <Tab.Navigator>
       <Tab.Screen
-        name="HomeScreen" // id da tela
-        component={HomeScreen} // aqui é onde será exibido a tela do componente HomeScreen.jsx
+        name="HomeScreen" 
+        component={HomeScreen} 
         options={{
           title: "Home",
           tabBarIcon: "home",
